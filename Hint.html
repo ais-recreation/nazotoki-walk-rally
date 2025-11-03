@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>謎解きウォークラリー：ヒントページ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+        }
+        /* JavaScriptで制御するため、Tailwindの 'hidden' クラスを使用します */
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-2xl">
+        <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+            
+            <h1 class="text-2xl md:text-3xl font-bold text-center mb-4 text-purple-600">ヒントページ</h1>
+            
+            <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 rounded-lg mb-8" role="alert">
+                <p class="font-bold">ネタバレ注意！</p>
+                <p>このページには謎解きのヒントが記載されています。どうしてもわからない時だけ見てください。</p>
+            </div>
+
+            <!-- ▼ ヒント編集ここから ▼ -->
+
+            <!-- スポット1の謎 -->
+            <div class="hint-section mb-4">
+                <button class="hint-title-button w-full bg-indigo-500 text-white p-3 rounded-lg font-bold shadow hover:bg-indigo-600 transition-colors focus:outline-none" data-target="hint-body-1">
+                    スポット「とても景色がいい場所に来たよ！まるでクリスタルみたいだ！」の謎
+                </button>
+                <div id="hint-body-1" class="hint-body hidden mt-3 p-4 bg-gray-50 rounded-lg shadow-inner">
+                    
+                    <!-- ヒント1 -->
+                    <div class="hint-level">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント1の内容を編集 ▼ -->
+                            【ヒント1】<br>
+                            スポットの場所は、「クリスタル」という名称が入っているところ。マップを見てみよう。
+                            <!-- ▲ ヒント1の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-gray-300 text-gray-700 p-2 rounded-lg hover:bg-gray-400 transition-colors focus:outline-none">
+                            さらにヒントを見る
+                        </button>
+                    </div>
+
+                    <!-- ヒント2 (最初は隠れている) -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント2の内容を編集 ▼ -->
+                            【ヒント2】<br>
+                            スポットの場所は「クリスタルビュー」。そこで入手した新たな謎にチャレンジしよう。
+                            <!-- ▲ ヒント2の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-gray-300 text-gray-700 p-2 rounded-lg hover:bg-gray-400 transition-colors focus:outline-none">
+                            さらにヒントを見る
+                        </button>
+                    </div>
+
+                    <!-- ヒント3 (最終ヒント・最初は隠れている) -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント3の内容を編集 ▼ -->
+                            【ヒント3】<br>
+                            「ある」の群は、"共通の漢字"を付けると全て熟語になるよ。
+                            <!-- ▲ ヒント3の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-red-300 text-gray-700 p-2 rounded-lg hover:bg-red-400 transition-colors focus:outline-none">
+                            <b>"答え"を見る</b>
+                        </button>
+                    </div>
+
+                    <!-- 答え  -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ 答えの内容を編集 ▼ -->
+                            【答え】<br>
+                            「ある」の群の言葉は、最後に「橋」を付けると、全て熟語になるよ。正解は「<b>橋</b>」だ！
+                            <!-- ▲ 答えの内容を編集 ▲ -->
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- スポット2の謎(メイン) -->
+            <div class="hint-section mb-4">
+                <button class="hint-title-button w-full bg-teal-500 text-white p-3 rounded-lg font-bold shadow hover:bg-teal-600 transition-colors focus:outline-none" data-target="hint-body-2">
+                    スポット「ここの橋はグラグラする。もしケーブルが切れたら…。頼むから揺らさないでほしい…。」の謎(メイン)
+                </button>
+                <div id="hint-body-2" class="hint-body hidden mt-3 p-4 bg-gray-50 rounded-lg shadow-inner">
+                    
+                    <!-- ヒント1 -->
+                    <div class="hint-level">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント1の内容を編集 ▼ -->
+                            【ヒント1】<br>
+                            緑のマスを埋めるためには、それぞれ数字に対応する「謎」を解く必要がありそうだ。
+                            <!-- ▲ ヒント1の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-gray-300 text-gray-700 p-2 rounded-lg hover:bg-gray-400 transition-colors focus:outline-none">
+                            さらにヒントを見る
+                        </button>
+                    </div>
+
+                    <!-- ヒント2 (最初は隠れている) -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント2の内容を編集 ▼ -->
+                            【ヒント2】<br>
+                            各謎の答えが、うまく当てはまらない場合は、ふくーたんの持っている<b>"旗"</b>に注目しよう！
+                            <!-- ▲ ヒント2の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-gray-300 text-gray-700 p-2 rounded-lg hover:bg-gray-400 transition-colors focus:outline-none">
+                            さらにヒントを見る
+                        </button>
+                    </div>
+
+                    <!-- ヒント3 (最初は隠れている) -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント3の内容を編集 ▼ -->
+                            【ヒント3】<br>
+                            各謎の答えを、英単語であてはめてみよう。
+                            <!-- ▲ ヒント3の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-red-300 text-gray-700 p-2 rounded-lg hover:bg-red-400 transition-colors focus:outline-none">
+                            <b>"答え"を見る</b>
+                        </button>
+                    </div>
+                    
+                    <!-- 答え  -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ 答えの内容を編集 ▼ -->
+                            【答え】<br>
+                            各謎の答えを当てはめると「OREWLF」になる。これを並び替えると「<b>FLOWER</b>」になる。
+                            <!-- ▲ 答えの内容を編集 ▲ -->
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- スポット2の謎(サブ謎①) -->
+            <div class="hint-section mb-4">
+                <button class="hint-title-button w-full bg-teal-500 text-white p-3 rounded-lg font-bold shadow hover:bg-teal-600 transition-colors focus:outline-none" data-target="hint-body-3">
+                    スポット「ここの橋はグラグラする。もしケーブルが切れたら…。頼むから揺らさないでほしい…。」の謎(サブ①)
+                </button>
+                <div id="hint-body-3" class="hint-body hidden mt-3 p-4 bg-gray-50 rounded-lg shadow-inner">
+                    
+                    <!-- ヒント1 -->
+                    <div class="hint-level">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント1の内容を編集 ▼ -->
+                            【ヒント1】<br>
+                            ふくーたんの持っている<b>"旗"</b>に注目しよう。
+                            <!-- ▲ ヒント1の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-gray-300 text-gray-700 p-2 rounded-lg hover:bg-gray-400 transition-colors focus:outline-none">
+                            さらにヒントを見る
+                        </button>
+                    </div>
+
+                    <!-- ヒント2 (最初は隠れている) -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント2の内容を編集 ▼ -->
+                            【ヒント2】<br>
+                            「仕事」を英語で・・？ 「宿題」を英語で・・？
+                            <!-- ▲ ヒント2の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-red-300 text-gray-700 p-2 rounded-lg hover:bg-red-400 transition-colors focus:outline-none">
+                            <b>"答え"を見る</b>
+                        </button>                        
+                    </div>
+
+                    <!-- 答え  -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ 答えの内容を編集 ▼ -->
+                            【答え】<br>
+                            「宿題」は英語で「HOMEWORK」。□="WORK"としたとき、○＝"HOME"となるので、正解は「<b>HOME</b>」だ！
+                            <!-- ▲ 答えの内容を編集 ▲ -->
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- スポット2の謎(サブ謎②) -->
+            <div class="hint-section mb-4">
+                <button class="hint-title-button w-full bg-teal-500 text-white p-3 rounded-lg font-bold shadow hover:bg-teal-600 transition-colors focus:outline-none" data-target="hint-body-4">
+                    スポット「ここの橋はグラグラする。もしケーブルが切れたら…。頼むから揺らさないでほしい…。」の謎(サブ②)
+                </button>
+                <div id="hint-body-4" class="hint-body hidden mt-3 p-4 bg-gray-50 rounded-lg shadow-inner">
+                    <!-- ヒント1 -->
+                    <div class="hint-level">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント1の内容を編集 ▼ -->
+                            【ヒント1】<br>
+                            ふくーたんの持っている<b>"旗"</b>に注目しよう。
+                            <!-- ▲ ヒント1の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-gray-300 text-gray-700 p-2 rounded-lg hover:bg-gray-400 transition-colors focus:outline-none">
+                            さらにヒントを見る
+                        </button>
+                    </div>
+
+                    <!-- ヒント2 (最初は隠れている) -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント2の内容を編集 ▼ -->
+                            【ヒント2】<br>
+                            英単語でしりとりを行っているよ。「屋根」を英語で・・？ 
+                            <!-- ▲ ヒント2の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-gray-300 text-gray-700 p-2 rounded-lg hover:bg-gray-400 transition-colors focus:outline-none">
+                            さらにヒントを見る
+                        </button>                       
+                    </div>
+
+                    <!-- ヒント3 (最初は隠れている) -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント3の内容を編集 ▼ -->
+                            【ヒント3】<br>
+                            屋根「roof」、食べ物「food」。どちらの単語も共通している箇所があるみたい。
+                            <!-- ▲ ヒント3の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-red-300 text-gray-700 p-2 rounded-lg hover:bg-red-400 transition-colors focus:outline-none">
+                            <b>"答え"を見る</b>
+                        </button>
+                    </div>
+
+                    <!-- 答え  -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ 答えの内容を編集 ▼ -->
+                            【答え】<br>
+                            単語の中には、共通して「oo」が含まれているよ。foodの"d"から始まり、roofの"r"で終わる単語で、間に"oo"を入れたとき、正解は「<b>DOOR</b>」となる。
+                            <!-- ▲ 答えの内容を編集 ▲ -->
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- スポット2の謎(サブ謎③) -->
+            <div class="hint-section mb-4">
+                <button class="hint-title-button w-full bg-teal-500 text-white p-3 rounded-lg font-bold shadow hover:bg-teal-600 transition-colors focus:outline-none" data-target="hint-body-5">
+                    スポット「ここの橋はグラグラする。もしケーブルが切れたら…。頼むから揺らさないでほしい…。」の謎(サブ③)
+                </button>
+                <div id="hint-body-5" class="hint-body hidden mt-3 p-4 bg-gray-50 rounded-lg shadow-inner">
+                    <!-- ヒント1 -->
+                    <div class="hint-level">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント1の内容を編集 ▼ -->
+                            【ヒント1】<br>
+                            天⇒海があるので、これは"曜日"ではないようだ。
+                            <!-- ▲ ヒント1の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-gray-300 text-gray-700 p-2 rounded-lg hover:bg-gray-400 transition-colors focus:outline-none">
+                            さらにヒントを見る
+                        </button>
+                    </div>
+
+                    <!-- ヒント2 (最初は隠れている) -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント2の内容を編集 ▼ -->
+                            【ヒント2】<br>
+                            天体が関係しているよ。
+                            <!-- ▲ ヒント2の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-red-300 text-gray-700 p-2 rounded-lg hover:bg-red-400 transition-colors focus:outline-none">
+                            <b>"答え"を見る</b>
+                        </button>
+                    </div>
+
+                    <!-- 答え  -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ 答えの内容を編集 ▼ -->
+                            【答え】<br>
+                            水金地火木土天海…と太陽系の惑星の順序を表しているよ。正解は「<b>木</b>」だ！
+                            <!-- ▲ 答えの内容を編集 ▲ -->
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- スポット2の謎(サブ謎④) -->
+            <div class="hint-section mb-4">
+                <button class="hint-title-button w-full bg-teal-500 text-white p-3 rounded-lg font-bold shadow hover:bg-teal-600 transition-colors focus:outline-none" data-target="hint-body-6">
+                    スポット「ここの橋はグラグラする。もしケーブルが切れたら…。頼むから揺らさないでほしい…。」の謎(サブ④)
+                </button>
+                <div id="hint-body-6" class="hint-body hidden mt-3 p-4 bg-gray-50 rounded-lg shadow-inner">
+                    <!-- ヒント1 -->
+                    <div class="hint-level">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント1の内容を編集 ▼ -->
+                            【ヒント1】<br>
+                            獅子=16、肉=18、葉っぱ=64と考えてみよう。
+                            <!-- ▲ ヒント1の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-gray-300 text-gray-700 p-2 rounded-lg hover:bg-gray-400 transition-colors focus:outline-none">
+                            さらにヒントを見る
+                        </button>
+                    </div>
+
+                    <!-- ヒント2 (最初は隠れている) -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント2の内容を編集 ▼ -->
+                            【ヒント2】<br>
+                            九九が関係しているよ。
+                            <!-- ▲ ヒント2の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-red-300 text-gray-700 p-2 rounded-lg hover:bg-red-400 transition-colors focus:outline-none">
+                            <b>"答え"を見る</b>
+                        </button>
+                    </div>
+
+                    <!-- 答え  -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ 答えの内容を編集 ▼ -->
+                            【答え】<br>
+                            しし(4×4)=16、にく(2×9)=18、はっぱ(8×8)=64なので、8は にし(2×4)と考えられるため、正解は「<b>西</b>だ！
+                            <!-- ▲ 答えの内容を編集 ▲ -->
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- スポット2の謎(サブ謎⑤) -->
+            <div class="hint-section mb-4">
+                <button class="hint-title-button w-full bg-teal-500 text-white p-3 rounded-lg font-bold shadow hover:bg-teal-600 transition-colors focus:outline-none" data-target="hint-body-7">
+                    スポット「ここの橋はグラグラする。もしケーブルが切れたら…。頼むから揺らさないでほしい…。」の謎(サブ⑤)
+                </button>
+                <div id="hint-body-7" class="hint-body hidden mt-3 p-4 bg-gray-50 rounded-lg shadow-inner">
+                    <!-- ヒント1 -->
+                    <div class="hint-level">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント1の内容を編集 ▼ -->
+                            【ヒント1】<br>
+                            右上のマークに注目しよう。
+                            <!-- ▲ ヒント1の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-gray-300 text-gray-700 p-2 rounded-lg hover:bg-gray-400 transition-colors focus:outline-none">
+                            さらにヒントを見る
+                        </button>
+                    </div>
+
+                    <!-- ヒント2 (最初は隠れている) -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント2の内容を編集 ▼ -->
+                            【ヒント2】<br>
+                            各文字は、方角を表しているようだ。「例：E(東)とW(西)」のように、線で結んでみよう。"/"で区切られているものと、区切られていないものがあるが、この違いはなんだろう。
+                            <!-- ▲ ヒント2の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-red-300 text-gray-700 p-2 rounded-lg hover:bg-red-400 transition-colors focus:outline-none">
+                            <b>"答え"を見る</b>
+                        </button>
+                    </div>
+
+                    <!-- 答え  -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ 答えの内容を編集 ▼ -->
+                            【答え】<br>
+                            "/"で区切られているものは、それぞれ独立して線を引くようだ。(例：W/Sは西と南にそれぞれ線を引く。)区切られていないものは、WS(南西)などと、一つの方角として考えるようだ。全て指示に従って線を結ぶと現れる言葉は「<b>世界</b>」だ！
+                            <!-- ▲ 答えの内容を編集 ▲ -->
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- スポット2の謎(サブ謎⑥) -->
+            <div class="hint-section mb-4">
+                <button class="hint-title-button w-full bg-teal-500 text-white p-3 rounded-lg font-bold shadow hover:bg-teal-600 transition-colors focus:outline-none" data-target="hint-body-8">
+                    スポット「ここの橋はグラグラする。もしケーブルが切れたら…。頼むから揺らさないでほしい…。」の謎(サブ⑥)
+                </button>
+                <div id="hint-body-8" class="hint-body hidden mt-3 p-4 bg-gray-50 rounded-lg shadow-inner">
+                    <!-- ヒント1 -->
+                    <div class="hint-level">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント1の内容を編集 ▼ -->
+                            【ヒント1】<br>
+                            熟語のしりとりになっているようだ。
+                            <!-- ▲ ヒント1の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-red-300 text-gray-700 p-2 rounded-lg hover:bg-red-400 transition-colors focus:outline-none">
+                            <b>"答え"を見る</b>
+                        </button>
+                    </div>
+
+                    <!-- 答え  -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ 答えの内容を編集 ▼ -->
+                            【答え】<br>
+                            着火、火薬、鬼火、火星。正解は「<b>火</b>」だ！
+                            <!-- ▲ 答えの内容を編集 ▲ -->
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- スポット3への行き方謎(メイン①) -->
+            <div class="hint-section mb-4">
+                <button class="hint-title-button w-full bg-purple-500 text-white p-3 rounded-lg font-bold shadow hover:bg-purple-600 transition-colors focus:outline-none" data-target="hint-body-9">
+                    3つ目のスポットへの行き方について(メイン①)
+                </button>
+                <div id="hint-body-9" class="hint-body hidden mt-3 p-4 bg-gray-50 rounded-lg shadow-inner">
+                    <!-- ヒント1 -->
+                    <div class="hint-level">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント1の内容を編集 ▼ -->
+                            【ヒント1】<br>
+                            ここまで辿り着いた2つのスポットで入手したメモ①とメモ②を確認してみよう。
+                            <!-- ▲ ヒント1の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-gray-300 text-gray-700 p-2 rounded-lg hover:bg-gray-400 transition-colors focus:outline-none">
+                            さらにヒントを見る
+                        </button>
+                    </div>
+
+                    <!-- ヒント2 (最初は隠れている) -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント2の内容を編集 ▼ -->
+                            【ヒント2】<br>
+                            二つのメモを組み合わせると「セロハンテープを破りチームの中見ろ」という文章が出てきた。
+                            <!-- ▲ ヒント2の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-gray-300 text-gray-700 p-2 rounded-lg hover:bg-gray-400 transition-colors focus:outline-none">
+                            さらにヒントを見る
+                        </button>
+                    </div>
+
+                    <!-- ヒント3 (最初は隠れている) -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント3の内容を編集 ▼ -->
+                            【ヒント3】<br>
+                            ここで言う「チーム」は、チーム記号(A、Bなど)を表しているかもしれない。身の回りの持ち物を確認してみよう。
+                            <!-- ▲ ヒント3の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-red-300 text-gray-700 p-2 rounded-lg hover:bg-red-400 transition-colors focus:outline-none">
+                            <b>"答え"を見る</b>
+                        </button>
+                    </div>
+                    
+                    <!-- 答え  -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ 答えの内容を編集 ▼ -->
+                            【答え】<br>
+                            集合時に渡されたチームボード(クリアファイル)のセロハンテープを破り、その中身を見ろ！ということのようだ。
+                            <!-- ▲ 答えの内容を編集 ▲ -->
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- スポット3への行き方謎(サブ①) -->
+            <div class="hint-section mb-4">
+                <button class="hint-title-button w-full bg-purple-500 text-white p-3 rounded-lg font-bold shadow hover:bg-purple-600 transition-colors focus:outline-none" data-target="hint-body-10">
+                    3つ目のスポットへの行き方について(オレンジ)
+                </button>
+                <div id="hint-body-10" class="hint-body hidden mt-3 p-4 bg-gray-50 rounded-lg shadow-inner">
+                    <!-- ヒント1 -->
+                    <div class="hint-level">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント1の内容を編集 ▼ -->
+                            【ヒント1】<br>
+                            右下の「あいうえお」と記載された表と、「ゆめ」⇒「ふね」との関係を考えてみよう。
+                            <!-- ▲ ヒント1の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-gray-300 text-gray-700 p-2 rounded-lg hover:bg-gray-400 transition-colors focus:outline-none">
+                            さらにヒントを見る
+                        </button>
+                    </div>
+
+                    <!-- ヒント2 (最初は隠れている) -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント2の内容を編集 ▼ -->
+                            【ヒント2】<br>
+                            「ゆ」から「ふ」に変換するには、50音表上で2マス右にずらしているようだ。
+                            <!-- ▲ ヒント2の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-gray-300 text-gray-700 p-2 rounded-lg hover:bg-gray-400 transition-colors focus:outline-none">
+                            さらにヒントを見る
+                        </button>
+                    </div>
+
+                    <!-- ヒント3 (最初は隠れている) -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント3の内容を編集 ▼ -->
+                            【ヒント3】<br>
+                            オレンジ背景＋黒枠の2マスの言葉に心当たりはないか？
+                            <!-- ▲ ヒント3の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-red-300 text-gray-700 p-2 rounded-lg hover:bg-red-400 transition-colors focus:outline-none">
+                            <b>"答え"を見る</b>
+                        </button>
+                    </div>
+                    
+                    <!-- 答え  -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ 答えの内容を編集 ▼ -->
+                            【答え】<br>
+                            「クリスタルビュー」で入手した謎の答え、「はし」がここに当てはまる。「ゆめ」⇒「ふね」と同様に、50音表で2マス右にずらすと、「はし」⇒「<b>たい</b>」が正解だ！
+                            <!-- ▲ 答えの内容を編集 ▲ -->
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- スポット3への行き方謎(サブ②) -->
+            <div class="hint-section mb-4">
+                <button class="hint-title-button w-full bg-purple-500 text-white p-3 rounded-lg font-bold shadow hover:bg-purple-600 transition-colors focus:outline-none" data-target="hint-body-11">
+                    3つ目のスポットへの行き方について(緑)
+                </button>
+                <div id="hint-body-11" class="hint-body hidden mt-3 p-4 bg-gray-50 rounded-lg shadow-inner">
+                    <!-- ヒント1 -->
+                    <div class="hint-level">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント1の内容を編集 ▼ -->
+                            【ヒント1】<br>
+                            緑マスに心当たりはないか？
+                            <!-- ▲ ヒント1の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-gray-300 text-gray-700 p-2 rounded-lg hover:bg-gray-400 transition-colors focus:outline-none">
+                            さらにヒントを見る
+                        </button>
+                    </div>
+
+                    <!-- ヒント2 (最初は隠れている) -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント2の内容を編集 ▼ -->
+                            【ヒント2】<br>
+                            スポット「吊り橋」で入手した謎の答え、「FLOWER」が当てはまるようだ。
+                            <!-- ▲ ヒント2の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-gray-300 text-gray-700 p-2 rounded-lg hover:bg-gray-400 transition-colors focus:outline-none">
+                            さらにヒントを見る
+                        </button>
+                    </div>
+
+                    <!-- ヒント3 (最初は隠れている) -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント3の内容を編集 ▼ -->
+                            【ヒント3】<br>
+                            ふくーたんの持っている国旗に注目！
+                            <!-- ▲ ヒント3の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-red-300 text-gray-700 p-2 rounded-lg hover:bg-red-400 transition-colors focus:outline-none">
+                            <b>"答え"を見る</b>
+                        </button>
+                    </div>
+                    
+                  <!-- 答え  -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ 答えの内容を編集 ▼ -->
+                            【答え】<br>
+                            「FLOWER」を日本語に変換すると・・・正解は「<b>はな</b>」だ！
+                            <!-- ▲ 答えの内容を編集 ▲ -->
+                        </p>
+                    </div>  
+
+                </div>
+            </div>
+
+            <!-- スポット3への行き方謎(メイン②) -->
+            <div class="hint-section mb-4">
+                <button class="hint-title-button w-full bg-purple-500 text-white p-3 rounded-lg font-bold shadow hover:bg-purple-600 transition-colors focus:outline-none" data-target="hint-body-12">
+                    3つ目のスポットへの行き方について(メイン②)
+                </button>
+                <div id="hint-body-12" class="hint-body hidden mt-3 p-4 bg-gray-50 rounded-lg shadow-inner">
+                    <!-- ヒント1 -->
+                    <div class="hint-level">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント1の内容を編集 ▼ -->
+                            【ヒント1】<br>
+                            「オレンジの謎」、「緑の謎」、それぞれの答えを右のマスに当てはめてみよう。
+                            <!-- ▲ ヒント1の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-red-300 text-gray-700 p-2 rounded-lg hover:bg-red-400 transition-colors focus:outline-none">
+                            <b>"答え"を見る</b>
+                        </button>
+                    </div>
+
+                  <!-- 答え  -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ 答えの内容を編集 ▼ -->
+                            【答え】<br>
+                            「だいやとはなにいけ」と読めるようになる。これは「<b>ダイヤと花の大観覧車</b>」のことだ！マップを見て向かってみよう！
+                            <!-- ▲ 答えの内容を編集 ▲ -->
+                        </p>
+                    </div>  
+
+                </div>
+            </div>
+
+            <!-- スポット3の謎 -->
+            <div class="hint-section mb-4">
+                <button class="hint-title-button w-full bg-orange-500 text-white p-3 rounded-lg font-bold shadow hover:bg-orange-600 transition-colors focus:outline-none" data-target="hint-body-13">
+                    3つ目のスポットの謎
+                </button>
+                <div id="hint-body-13" class="hint-body hidden mt-3 p-4 bg-gray-50 rounded-lg shadow-inner">
+                    <!-- ヒント1 -->
+                    <div class="hint-level">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント1の内容を編集 ▼ -->
+                            【ヒント1】<br>
+                            古文書に書かれている「観覧車」とは、何を指しているのか考え、探してみよう。
+                            <!-- ▲ ヒント1の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-gray-300 text-gray-700 p-2 rounded-lg hover:bg-gray-400 transition-colors focus:outline-none">
+                            さらにヒントを見る
+                        </button>
+                    </div>
+
+                    <!-- ヒント2 (最初は隠れている) -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント2の内容を編集 ▼ -->
+                            【ヒント2】<br>
+                            「だいやとはなにいけ」と書かれた紙をよく見ると、右側が観覧車になっている。では、紋様をつなぐとは？
+                            <!-- ▲ ヒント2の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-gray-300 text-gray-700 p-2 rounded-lg hover:bg-gray-400 transition-colors focus:outline-none">
+                            さらにヒントを見る
+                        </button>
+                    </div>
+
+                    <!-- ヒント3 (最初は隠れている) -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント3の内容を編集 ▼ -->
+                            【ヒント3】<br>
+                            紋様をつなぐために、紙の上部と下部を山折りにするような形で繋げてみよう。その上で、「数多の月を漆黒に染めたとき」というのは・・？
+                            <!-- ▲ ヒント3の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-gray-300 text-gray-700 p-2 rounded-lg hover:bg-gray-400 transition-colors focus:outline-none">
+                            さらにヒントを見る
+                        </button>
+                    </div>
+
+                    <!-- ヒント4 (最初は隠れている) -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント4の内容を編集 ▼ -->
+                            【ヒント4】<br>
+                            文様をよく見てみると、月のマークが描かれた箇所が3箇所ある。この月を黒く塗りつぶしてみよう。そうすると、見え覚えのあるものが出てくるかも。
+                            <!-- ▲ ヒント4の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-red-300 text-gray-700 p-2 rounded-lg hover:bg-red-400 transition-colors focus:outline-none">
+                            <b>"答え"を見る</b>
+                        </button>
+                    </div>
+
+                  <!-- 答え  -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ 答えの内容を編集 ▼ -->
+                            【答え】<br>
+                            これはQRコードだ！もし、うまく読み込めない場合は、このQRコードを読み込もう。<br>
+                            ⇒<a href="https://ais-recreation.github.io/nazotoki-walk-rally/nazo-walk-rally-Last_Q.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline font-bold">
+                                QRコード先のページ
+                            </a>                            
+                            <img src=".\Spot3_QR.png" alt="スポット3のQRコード" class="w-full h-auto rounded-lg shadow-md">
+                            <!-- ▲ 答えの内容を編集 ▲ -->
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 最後の謎 -->
+            <div class="hint-section mb-4">
+                <button class="hint-title-button w-full bg-red-500 text-white p-3 rounded-lg font-bold shadow hover:bg-red-600 transition-colors focus:outline-none" data-target="hint-body-14">
+                    最後の謎
+                </button>
+                <div id="hint-body-14" class="hint-body hidden mt-3 p-4 bg-gray-50 rounded-lg shadow-inner">
+                    <!-- ヒント1 -->
+                    <div class="hint-level">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント1の内容を編集 ▼ -->
+                            【ヒント1】<br>
+                            ふくーたんは、「別次元」に閉じ込められているようだ。
+                            <!-- ▲ ヒント1の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-gray-300 text-gray-700 p-2 rounded-lg hover:bg-gray-400 transition-colors focus:outline-none">
+                            さらにヒントを見る
+                        </button>
+                    </div>
+
+                    <!-- ヒント2 (最初は隠れている) -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント2の内容を編集 ▼ -->
+                            【ヒント2】<br>
+                            「最初から君たちの近くに居た…」とは、どういうことだろう。身の回りを確認してみよう。
+                            <!-- ▲ ヒント2の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-gray-300 text-gray-700 p-2 rounded-lg hover:bg-gray-400 transition-colors focus:outline-none">
+                            さらにヒントを見る
+                        </button>
+                    </div>
+
+                    <!-- ヒント3 (最初は隠れている) -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント3の内容を編集 ▼ -->
+                            【ヒント3】<br>
+                            閉じ込められて、困っていそうなふくーたんがいたら、きっとそれが答え！勇気を出して「西なぎさBBQ会場」に向かい、AISスタッフへ伝えてみよう！
+                            <!-- ▲ ヒント3の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-gray-300 text-gray-700 p-2 rounded-lg hover:bg-gray-400 transition-colors focus:outline-none">
+                            さらにヒントを見る
+                        </button>
+                    </div>
+
+                    <!-- ヒント4 (最初は隠れている) -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ ヒント4の内容を編集 ▼ -->
+                            【ヒント4】<br>
+                            どうしても不安ということであれば…私たちがいるのは3次元、ふくーたんは2次元にいるようだ。
+                            <!-- ▲ ヒント4の内容を編集 ▲ -->
+                        </p>
+                        <button class="more-hint-button mt-4 w-full bg-red-300 text-gray-700 p-2 rounded-lg hover:bg-red-400 transition-colors focus:outline-none">
+                            <b>"答え"を見る</b>
+                        </button>
+                    </div>
+
+                  <!-- 答え  -->
+                    <div class="hint-level hidden mt-4 border-t border-gray-300 pt-4">
+                        <p class="text-lg">
+                            <!-- ▼ 答えの内容を編集 ▼ -->
+                            【答え】<br>
+                            ふくーたんは、チームボードに描かれたQRコードの中に閉じ込められていた！！西なぎさのAISスタッフに、このQRコードの中にいるふくターンを救出してもらいましょう！
+                            <!-- ▲ 答えの内容を編集 ▲ -->
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ▲ ヒント編集ここまで ▲ -->
+
+        </div>
+        <footer class="text-center text-sm text-gray-500 mt-6">
+            &copy; 2025 Your Company Name
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 「謎Xのヒント」ボタンの処理
+            const titleButtons = document.querySelectorAll('.hint-title-button');
+            titleButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const targetId = button.getAttribute('data-target');
+                    const targetBody = document.getElementById(targetId);
+                    if (targetBody) {
+                        targetBody.classList.toggle('hidden');
+                    }
+                });
+            });
+
+            // 「さらにヒントを見る」ボタンの処理 (変更点)
+            const moreHintButtons = document.querySelectorAll('.more-hint-button');
+            moreHintButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // 1. クリックされたボタンの親(div.hint-level)を取得
+                    const currentHintLevel = button.closest('.hint-level');
+                    if (!currentHintLevel) return;
+
+                    // 2. 親の次の要素(次のdiv.hint-level)を取得
+                    let nextHintLevel = currentHintLevel.nextElementSibling;
+                    
+                    // nextElementSibling が hint-level でない場合(テキストノードなど)をスキップ
+                    while (nextHintLevel && !nextHintLevel.classList.contains('hint-level')) {
+                        nextHintLevel = nextHintLevel.nextElementSibling;
+                    }
+
+                    // 3. 次のヒントレベルが存在すれば表示する
+                    if (nextHintLevel && nextHintLevel.classList.contains('hint-level')) {
+                        nextHintLevel.classList.remove('hidden');
+                    }
+                    
+                    // 4. クリックされたボタン自体を非表示にする
+                    button.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
+
